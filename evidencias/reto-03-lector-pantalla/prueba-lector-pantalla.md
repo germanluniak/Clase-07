@@ -1,7 +1,7 @@
 # Práctica Clase 7 · Reto 3 — Notas del Narrador (MiniModa)
 
 * **Herramienta:** Narrador (Windows)
-* **Contexto:** Ficha de producto de MiniModa (Versión 1, sin aceptar cookies inicialmente), navegación con `Tab` y `Enter`.
+* **Contexto:** Ficha de producto de MiniModa (Versión 1), navegación con `Tab` y `Enter`.
 
 ## Observaciones registradas
 
