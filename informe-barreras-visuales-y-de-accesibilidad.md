@@ -93,11 +93,3 @@
 * **#4 (`Accesibilidad`):** Falta contorno o marca visual del foco al navegar con Tab por la ficha de producto.
 * **#5 (`Visual`):** En Versión 2 desaparece el botón «Agregar al carrito» y persiste recorte/scroll horizontal.
 ```[cite: 8]
-
-Si lo editás directo desde la interfaz web de GitHub (con el ícono del lápiz arriba a la derecha del archivo)[cite: 9], podés hacer el cambio ahí mismo sin tener que volver al editor local ni hacer otro commit desde el IDE.
-
-<ElicitationsGroup message="¿Cómo seguimos con la actualización del informe?">
-  <Elicitation label="Editar directo en GitHub" query="Voy a editar informe-barreras-visuales-y-de-accesibilidad.md directo en GitHub. ¿Qué tengo que tener en cuenta?"/>
-  <Elicitation label="Actualizar también en local" query="Prefiero actualizar el informe en mi carpeta local y hacer commit y push. ¿Cómo lo hago rápido?"/>
-  <Elicitation label="Revisar si falta algo más" query="Ya actualicé el informe con los links a los issues. ¿Está completa toda la práctica?"/>
-</ElicitationsGroup>
