@@ -89,7 +89,9 @@
 
 ### Issues abiertos en GitHub
 
-* **#3 (`Accesibilidad`):** El recorrido con Tab omite el botón «Comprar ahora» y salta a «Tu email».
-* **#4 (`Accesibilidad`):** Falta contorno o marca visual del foco al navegar con Tab por la ficha de producto.
-* **#5 (`Visual`):** En Versión 2 desaparece el botón «Agregar al carrito» y persiste recorte/scroll horizontal.
+### Issues abiertos en GitHub
+
+* **[Issue #3](https://github.com/germanluniak/Clase-07/issues/3)** (`Accesibilidad`): El recorrido con Tab omite el botón «Comprar ahora» y salta a «Tu email».
+* **[Issue #4](https://github.com/germanluniak/Clase-07/issues/4)** (`Accesibilidad`): Falta contorno o marca visual del foco al navegar con Tab por la ficha de producto.
+* **[Issue #5](https://github.com/germanluniak/Clase-07/issues/5)** (`Visual`): En Versión 2 desaparece el botón «Agregar al carrito» y persiste recorte/scroll horizontal.
 ```[cite: 8]
