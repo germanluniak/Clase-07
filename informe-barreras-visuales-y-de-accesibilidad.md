@@ -87,49 +87,17 @@
 | Al abrir el pop-up de «Guía de talles» con `Enter`, `Tab` sigue el orden de la página, recién llega al cierre tras pasar por «Aceptar» cookies y el control solo dice «cerrar» | **2.4.3** Orden del foco *(y **4.1.2** Nombre, función, valor)* | Probando con `Tab` y Narrador al abrir el pop-up de «Guía de talles» | No | 
 | En Versión 2, además del banner «Envío gratis» pedido, desaparece el botón «Agregar al carrito» (y cambia el rayado rojo de «Cantidad») con desplazamiento horizontal y banner superior cortado | Hallazgo visual / responsive no pedido *(revisar **1.4.10** Reflujo si aplica)* | Comparando capturas de Versión 1 y Versión 2 en DevTools (modo dispositivo) | No | 
 
-### Issues propuestos para GitHub
+### Issues abiertos en GitHub
 
-#### Issue 1 (Accesibilidad)
+* **#3 (`Accesibilidad`):** El recorrido con Tab omite el botón «Comprar ahora» y salta a «Tu email».
+* **#4 (`Accesibilidad`):** Falta contorno o marca visual del foco al navegar con Tab por la ficha de producto.
+* **#5 (`Visual`):** En Versión 2 desaparece el botón «Agregar al carrito» y persiste recorte/scroll horizontal.
+```[cite: 8]
 
-```
-[A11y] El recorrido con Tab omite el botón «Comprar ahora» y salta a «Tu email»
-Etiqueta: accesibilidad
-Criterio: WCAG 2.2 2.1.1 Teclado. Nivel A
-Entorno: Navegador de escritorio con Narrador (Windows), ficha de producto MiniModa (Versión 1)
-Pasos: 1. Abrí la ficha de producto de MiniModa (Versión 1). 2. Avanzá con Tab por los controles de la ficha pasando por «Agregar al carrito».
-Obtenido: El foco salta directamente desde «Agregar al carrito» hacia «Tu email» y no pasa por el botón «Comprar ahora».
-Esperado: El foco de teclado debe recorrer todos los controles interactivos, incluyendo «Comprar ahora», en un orden lógico.
-Impacto: Quienes navegan solo con teclado o lector de pantalla no pueden enfocar ni activar «Comprar ahora» desde el recorrido con Tab.
-¿Lo detectó la herramienta? No. Lo encontré recorriendo con Tab y Narrador.
-Evidencia: ./evidencias/reto-02-prueba-teclado/prueba-de-teclado.md, ./evidencias/reto-03-lector-pantalla/prueba-lector-pantalla.md y ./evidencias/reto-04-responsive-v1-v2/v1-375px-abajo.png
-```
+Si lo editás directo desde la interfaz web de GitHub (con el ícono del lápiz arriba a la derecha del archivo)[cite: 9], podés hacer el cambio ahí mismo sin tener que volver al editor local ni hacer otro commit desde el IDE.
 
-#### Issue 2 (Accesibilidad)
-
-```
-[A11y] Falta contorno o marca visual del foco al navegar con Tab por la ficha de producto
-Etiqueta: accesibilidad
-Criterio: WCAG 2.2 2.4.7 Enfoque visible. Nivel AA
-Entorno: Navegador de escritorio, ficha de producto MiniModa (Versión 1)
-Pasos: 1. Abrí la ficha de producto de MiniModa (Versión 1). 2. Presioná Tab y Enter para desplazarte y activar controles como «Guía de talles», «Agregar al carrito», «Aceptar» cookies y «Tu email».
-Obtenido: Los controles reciben foco y se logra activar acciones como aceptar las cookies, pero el foco no se contornea ni se marca visualmente en pantalla, por lo que cuesta dar con el botón y saber dónde estás parado.
-Esperado: Todo control enfocado con teclado debe mostrar un contorno o indicador visual claro y perceptible.
-Impacto: Quienes usan teclado o tienen baja visión deben buscar a ciegas en qué control están parados al tabular.
-¿Lo detectó la herramienta? No. Lo encontré navegando con teclado en la página.
-Evidencia: ./evidencias/reto-02-prueba-teclado/prueba-de-teclado.md, ./evidencias/reto-03-lector-pantalla/prueba-lector-pantalla.md y ./evidencias/reto-04-responsive-v1-v2/v1-375px-arriba.png
-```
-
-#### Issue 3 (Visual)
-
-```
-[Visual] En Versión 2 desaparece el botón «Agregar al carrito» y persiste recorte/scroll horizontal
-Etiqueta: visual
-Criterio: Hallazgo visual / responsive (cambio no solicitado en Versión 2)
-Entorno: DevTools modo dispositivo, ficha de producto MiniModa (Versión 1 vs. Versión 2)
-Pasos: 1. Abrí la Versión 1 en modo dispositivo en DevTools y observá la zona de acciones y el ancho de la página. 2. Abrí la Versión 2 (donde solo se pidió el banner «Envío gratis» sobre la foto) y compará ambas vistas.
-Obtenido: Aparece «Envío gratis» sobre la foto, pero desaparece el botón «Agregar al carrito» (y ya no aparece el rayado rojo de «Cantidad»); además se mantiene barra de scroll horizontal, banner superior cortado y tabla extendida hacia el borde derecho.
-Esperado: Solo debe incorporarse el banner «Envío gratis» sobre la foto manteniendo las acciones de compra (incluido «Agregar al carrito») y sin cortes ni desplazamiento horizontal indebido.
-Impacto: Quienes compran desde el celular pierden la acción «Agregar al carrito» en Versión 2 y enfrentan cortes y scroll lateral.
-¿Lo detectó la herramienta? No. Lo encontré comparando capturas de Versión 1 y Versión 2 en DevTools.
-Evidencia: ./evidencias/reto-04-responsive-v1-v2/v1-375px-arriba.png, ./evidencias/reto-04-responsive-v1-v2/v1-375px-abajo.png, ./evidencias/reto-04-responsive-v1-v2/v2-375px-arriba.png y ./evidencias/reto-04-responsive-v1-v2/v2-375px-abajo.png
-```
+<ElicitationsGroup message="¿Cómo seguimos con la actualización del informe?">
+  <Elicitation label="Editar directo en GitHub" query="Voy a editar informe-barreras-visuales-y-de-accesibilidad.md directo en GitHub. ¿Qué tengo que tener en cuenta?"/>
+  <Elicitation label="Actualizar también en local" query="Prefiero actualizar el informe en mi carpeta local y hacer commit y push. ¿Cómo lo hago rápido?"/>
+  <Elicitation label="Revisar si falta algo más" query="Ya actualicé el informe con los links a los issues. ¿Está completa toda la práctica?"/>
+</ElicitationsGroup>
