@@ -1,6 +1,6 @@
 # Práctica Clase 7 · Reto 2 — Evidencias de recorrido con teclado (MiniModa)
 
-* **Versión / Escenario:** Versión 1, sin aceptar cookies al inicio.
+* **Versión / Escenario:** Versión 1.
 * **Teclas utilizadas:** `Tab`, `Enter` (y evaluación de recorrido/foco).
 
 ## Comportamiento y hallazgos del recorrido con teclado
